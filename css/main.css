@@ -95,6 +95,31 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* TYPOGRAPHY */
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.heavy-weight {
+    font-weight: 900;
+}
+
+.medium-weight {
+    font-weight: 400;
+}
+
+.light-weight {
+    font-weight: 200;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* DEFAULT CONTAINERS */
+
 div#container {
     border: 1px solid #ccc;
     width: 27em;
@@ -104,9 +129,44 @@ div#container {
     margin-bottom: 3em;
 }
 
-h1 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
+div#ios_header {
+    height: 5em;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    position: relative;
+}
+
+div#system_bar {
+    height: 1em;
+    background-color: #ccc;
+}
+
+div#ios_header > h1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+div#ios_header > img{
+    height: 2em;
+    width: 2em;
+    background-color: #ccc;
+    position: absolute;
+}
+
+div#ios_header > img#hamburger {
+    bottom: 5px;
+    left: 5px;
+}
+
+div#ios_header > img#another_widget {
+    bottom: 5px;
+    right: 5px;
+}
+
+div#page {
+    padding: 0 1em;
 }
 
 
