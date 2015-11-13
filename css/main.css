@@ -95,6 +95,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+div#container {
+    border: 1px solid #ccc;
+    width: 27em;
+    height: 48em;
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
 
 h1 {
     font-family: 'Lato', sans-serif;
