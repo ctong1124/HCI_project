@@ -95,104 +95,175 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* TYPOGRAPHY */
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}   
 
-h1 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-}
-
-h2 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-}
-
-h3 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-}
-p {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-}
-
-.ultra-bold {
-    font-weight: 900;
-}
-
-.bold {
-    font-weight: 700;
-}
-
-.normal {
-    font-weight: 400;
-}
-
-.light {
-    font-weight: 100;
-}
-
-.italic {
-    font-style: italic;
-}
-
-/* DEFAULT CONTAINERS */
-
-div#container {
-    width: 100%;
-    margin: auto;
-}
-
-div#ios_header {
-    height: 4em;
-    border-bottom: 1px solid #ccc;
-    text-align: center;
+#searchpage .searchbar {
     position: relative;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    height: 6em;
     background-color: white;
+    border-bottom: .1em solid #ccc;
+
 }
 
-div#system_bar {
-    height: 1em;
-    background-color: #ccc;
+#searchpage .box{
+  padding: 1em 0;
+  height: 1em;
 }
 
-div#ios_header > h1 {
+#searchpage .toolbar {
+    border-bottom: .1em solid #ccc;
+}
+
+#searchpage .container-1{
+  width: 100%;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+#searchpage .container-1 input#search{
+  width: 80%;
+  height: 2.25em;
+  background: #EBEBEB;
+  border: none;
+  font-size: 10pt;
+  /*float: left;*/
+  color: #63717f;
+  padding-left: 2.5em;
+  -webkit-border-radius: .25em;
+  -moz-border-radius: .25em;
+  border-radius: .25em;
+}
+
+#searchpage #page {
+    margin-top: 10em;
+}
+
+#searchpage .container-1 .icon{
+  position: absolute;
+  margin: .4em 0 0 .5em;
+  z-index: 1;
+  color: #4f5b66;
+}
+
+#searchpage ul.tabs{
+    margin: 0 0 0 1em;
+    padding: .5em 0;
+    list-style: none;
+    display: flex;
+}
+
+#searchpage ul.tabs li{
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: .5em 0;
+    cursor: pointer;
+    font-size: .75em;
+    width: 31%;
+    border: .1em solid #EBEBEB;
+}
+
+#searchpage ul.tabs li.current{
+    background: #EBEBEB;
+    color: #222;
+}
+
+#searchpage .tabs li h3{
+    font-size: 1em;
+}
+
+#searchpage .tab-content{
+    display: none;
+}
+
+#searchpage .tab-content.current{
+    display: inherit;
+}
+
+#searchpage .entry {
     position: relative;
+    height: 4em;
+    padding: 1em 1em;
+}
+
+#searchpage .entry:after {
+    content: '';
+    position: absolute;
+    width: 94%;
+    left: 3%;
     bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-div#ios_header > .toolbar > img{
-    height: 2em;
-    width: 2em;
-    background-color: #ccc;
-    /*position: absolute;*/
-}
-
-div#ios_header > .toolbar > img#hamburger {
-    bottom: 5px;
-    left: 5px;
-}
-
-div#ios_header > .toolbar > h1{
-    display:inline-block;
-}
-
-div#ios_header > img#another_widget {
-    bottom: 5px;
-    right: 5px;
-}
-
-div#page {
-    margin-top: 5em;
+    border-bottom: 1px solid #CCC;
 }
 
 
+#searchpage .entry .pic {
+    float: left;
+    width: 4em;
+    height: 4em;
+    background-color: #EBEBEB;
+}
 
+#searchpage .entry .info {
+    width: 65%;
+    /*padding: .75em 0 .75em .75em;*/
+    position: relative;
+    padding-left: .75em;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    float: left;
+}
+
+#searchpage .entry .info p{
+    color: #CCC;
+}
+
+#searchpage .entry .info h3{
+    color: #1CD6AB;
+}
+
+#searchpage h1 {
+    font-family: 'Lato', sans-serif;
+}
+
+#searchpage h2 {
+    font-family: 'Lato', sans-serif;
+}
+
+#searchpage h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: .75em;
+}
+#searchpage p {
+    font-family: 'Lato', sans-serif;
+    font-size: .5em;
+
+}
+
+#searchpage .entry .icon{
+  float:right;
+  padding: 1.25em 0;
+  z-index: 1;
+  color: #1CD6AB;
+}
+
+#searchpage .entry .icon i {
+    display: inline-block;
+    padding: .20em .26em .19em .25em;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50% ;
+    border-radius: 50%;
+    border: 2px solid #1CD6AB;
+}
 
 
 
