@@ -1,0 +1,9 @@
+div#create_button {
+	height: 3em;
+	background-color: #ccc;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+}

@@ -127,6 +127,7 @@ div#container {
     margin: auto;
     margin-top: 3em;
     margin-bottom: 3em;
+    position: relative;
 }
 
 div#ios_header {
@@ -167,6 +168,7 @@ div#ios_header > img#another_widget {
 
 div#page {
     padding: 0 1em;
+    position: relative;
 }
 
 
