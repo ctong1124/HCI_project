@@ -57,6 +57,19 @@ div#add_friends > h3 {
 div#add_friends > div.box {
 }
 
+div#tags {
+	clear: both;
+}
+
+div#tags > div.a_tag {
+    float: left;
+    background-color: #ccc;
+    margin-right: 5px;
+    color: white;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
 /* SEARCH BOXES */
 .container-1{
   vertical-align: middle;
