@@ -7,3 +7,96 @@ div#create_button {
 	right: 0;
 	text-align: center;
 }
+
+div.add {
+	display: inline-block;
+	width: 100%;
+}
+
+div.add > div.box {
+	float: left;
+	width: 60%;
+}
+
+/** PRIVACY **/
+div#privacy {
+	display: inline-block;
+}
+
+div#privacy > h3 {
+	float: left;
+}
+
+div#privacy > form {
+	float: left;
+}
+
+/** GENRES **/
+div#add_genres {
+
+}
+
+div#add_genres > h3 {
+	width: 120px;
+	float: left;
+}
+
+div#add_genres > div.box {
+}
+
+/** ADD FRIENDS **/
+
+div#add_friends {
+}
+
+div#add_friends > h3 {
+	width: 120px;
+	float: left;
+}
+
+div#add_friends > div.box {
+}
+
+/* SEARCH BOXES */
+.container-1{
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+
+.container-1 input.search {
+    height: 24px;
+    width: 100%;
+    background: white;
+    font-size: 10pt;
+    float: left;
+    color: #63717f;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 3px solid #ccc;
+}
+
+.container-1 input.search::-webkit-input-placeholder {
+   color: #65737e;
+}
+ 
+.container-1 input.search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+ 
+.container-1 input.search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+ 
+.container-1 input.search:-ms-input-placeholder {  
+   color: #65737e;  
+}
+
+.container-1 .icon{
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  color: #4f5b66;
+}
