@@ -16,6 +16,7 @@
         <link href='https://fonts.googleapis.com/css?family=Lato:400,900italic,900,700italic,700,400italic,300italic,300,100italic,100' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -24,7 +25,7 @@
 
         <!-- Add your site or application content here -->
         <!-- Add your site or application content here -->
-        <div id="searchpage">
+        <div id="search-page">
         <div id="container">
             <div id="ios_header">
                 <!-- This is the default navigation bar --> 
@@ -56,56 +57,72 @@
             </div>
             <div id="page">
                 <div id="songs" class="tab-content current">
-                    <div class="entry">
-                        <div class="pic">
+                    <div class="search-result">
+                        <div class="entry">
+                            <div class="pic">
+                            </div>
+                            <div class="info">
+                                <h3 class="bold">Devil in a New Dress</h3>
+                                <p class="normal">Kanye West </p>
+                                <p class="normal">My Beautiful Dark Twisted Fantasy </p>
+                            </div>
+                            <div class="icon"><i class="fa fa-plus"></i></div>
                         </div>
-                        <div class="info">
-                            <h3 class="bold">Devil in a New Dress</h3>
-                            <p class="normal">Kanye West </p>
-                            <p class="normal">My Beautiful Dark Twisted Fantasy </p>
-                        </div>
-                        <div class="icon"><i class="fa fa-plus"></i></div>
-                    </div>
 
-                    <div class="entry">
-                        <div class="pic">
+                        <div class="entry">
+                            <div class="pic">
+                            </div>
+                            <div class="info">
+                                <h3 class="bold">Devil in a New Dress</h3>
+                                <p class="normal">Kanye West </p>
+                                <p class="normal">My Beautiful Dark Twisted Fantasy </p>
+                            </div>
+                            <div class="icon"><i class="fa fa-plus"></i></div>
                         </div>
-                        <div class="info">
-                            <h3 class="bold">Devil in a New Dress</h3>
-                            <p class="normal">Kanye West </p>
-                            <p class="normal">My Beautiful Dark Twisted Fantasy </p>
+                        <div class="entry">
+                            <div class="pic">
+                            </div>
+                            <div class="info">
+                                <h3 class="bold">Devil in a New Dress</h3>
+                                <p class="normal">Kanye West </p>
+                                <p class="normal">My Beautiful Dark Twisted Fantasy </p>
+                            </div>
+                            <div class="icon"><i class="fa fa-plus"></i></div>
                         </div>
-                        <div class="icon"><i class="fa fa-plus"></i></div>
-                    </div>
-                    <div class="entry">
-                        <div class="pic">
-                        </div>
-                        <div class="info">
-                            <h3 class="bold">Devil in a New Dress</h3>
-                            <p class="normal">Kanye West </p>
-                            <p class="normal">My Beautiful Dark Twisted Fantasy </p>
-                        </div>
-                        <div class="icon"><i class="fa fa-plus"></i></div>
                     </div>
                 </div>
+
                 <div id="albums" class="tab-content">
-                     <div class="entry">
-                        <div class="pic">
+                    <div class="search-result">
+                         <div class="entry">
+                            <div class="pic">
+                            </div>
+                            <div class="info">
+                                <h3 class="bold">My Beautiful Dark Twisted Fantasy</h3>
+                                <p class="normal">Kanye West </p>
+                                <p class="normal">2010</p>
+                            </div>
+                            
                         </div>
-                        <div class="info">
-                            <h3 class="bold">My Beautiful Dark Twisted Fantasy</h3>
-                            <p class="normal">Kanye West </p>
-                            <p class="normal">2010</p>
-                        </div>
-                        <div class="icon"><i class="fa fa-plus"></i></div>
+                    </div>
+                    <div class="album-page">
+
                     </div>
                 </div>
+
                 <div id="artists" class="tab-content">
-                    <div class="entry">
-                        <div class="pic">
+                    <div class="search-result">
+                        <div class="entry">
+                            <div class="pic">
+                            </div>
+                            <div class="info">
+                                <h3 class="bold">Kanye West</h3>
+                            </div>
                         </div>
-                        <div class="info">
-                            <h3 class="bold">Kanye West</h3>
+                    </div>
+                    <div class="artist-page">
+                        <div class="exit-btn">
+                            <h1 class="normal">+</h1>
                         </div>
                     </div>
                 </div>
@@ -129,23 +146,8 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/searchpage.js"></script>
 
-
-        <script>
-        $(document).ready(function(){
-            
-            $('ul.tabs li').click(function(){
-                var tab_id = $(this).attr('data-tab');
-
-                $('ul.tabs li').removeClass('current');
-                $('.tab-content').removeClass('current');
-
-                $(this).addClass('current');
-                $("#"+tab_id).addClass('current');
-            })
-
-        })
-        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

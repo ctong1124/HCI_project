@@ -103,7 +103,7 @@ textarea {
   transform: translateY(-50%);
 }   
 
-#searchpage .searchbar {
+#search-page .searchbar {
     position: relative;
     height: 6em;
     background-color: white;
@@ -111,23 +111,23 @@ textarea {
 
 }
 
-#searchpage .box{
+#search-page .box{
   padding: 1em 0;
   height: 1em;
 }
 
-#searchpage .toolbar {
+#search-page .toolbar {
     border-bottom: .1em solid #ccc;
 }
 
-#searchpage .container-1{
+#search-page .container-1{
   width: 100%;
   vertical-align: middle;
   white-space: nowrap;
   position: relative;
 }
 
-#searchpage .container-1 input#search{
+#search-page .container-1 input#search{
   width: 80%;
   height: 2.25em;
   background: #EBEBEB;
@@ -141,25 +141,25 @@ textarea {
   border-radius: .25em;
 }
 
-#searchpage #page {
+#search-page #page {
     margin-top: 10em;
 }
 
-#searchpage .container-1 .icon{
+#search-page .container-1 .icon{
   position: absolute;
   margin: .4em 0 0 .5em;
   z-index: 1;
   color: #4f5b66;
 }
 
-#searchpage ul.tabs{
+#search-page ul.tabs{
     margin: 0 0 0 1em;
     padding: .5em 0;
     list-style: none;
     display: flex;
 }
 
-#searchpage ul.tabs li{
+#search-page ul.tabs li{
     background: none;
     color: #222;
     display: inline-block;
@@ -170,30 +170,30 @@ textarea {
     border: .1em solid #EBEBEB;
 }
 
-#searchpage ul.tabs li.current{
+#search-page ul.tabs li.current{
     background: #EBEBEB;
     color: #222;
 }
 
-#searchpage .tabs li h3{
+#search-page .tabs li h3{
     font-size: 1em;
 }
 
-#searchpage .tab-content{
+#search-page .tab-content{
     display: none;
 }
 
-#searchpage .tab-content.current{
+#search-page .tab-content.current{
     display: inherit;
 }
 
-#searchpage .entry {
+#search-page .entry {
     position: relative;
     height: 4em;
     padding: 1em 1em;
 }
 
-#searchpage .entry:after {
+#search-page .entry:after {
     content: '';
     position: absolute;
     width: 94%;
@@ -203,14 +203,14 @@ textarea {
 }
 
 
-#searchpage .entry .pic {
+#search-page .entry .pic {
     float: left;
     width: 4em;
     height: 4em;
     background-color: #EBEBEB;
 }
 
-#searchpage .entry .info {
+#search-page .entry .info {
     width: 65%;
     /*padding: .75em 0 .75em .75em;*/
     position: relative;
@@ -223,40 +223,40 @@ textarea {
     float: left;
 }
 
-#searchpage .entry .info p{
+#search-page .entry .info p{
     color: #CCC;
 }
 
-#searchpage .entry .info h3{
+#search-page .entry .info h3{
     color: #1CD6AB;
 }
 
-#searchpage h1 {
+#search-page h1 {
     font-family: 'Lato', sans-serif;
 }
 
-#searchpage h2 {
+#search-page h2 {
     font-family: 'Lato', sans-serif;
 }
 
-#searchpage h3 {
+#search-page h3 {
     font-family: 'Lato', sans-serif;
     font-size: .75em;
 }
-#searchpage p {
+#search-page p {
     font-family: 'Lato', sans-serif;
     font-size: .5em;
 
 }
 
-#searchpage .entry .icon{
+#search-page .tab-content .icon{
   float:right;
   padding: 1.25em 0;
   z-index: 1;
   color: #1CD6AB;
 }
 
-#searchpage .entry .icon i {
+#search-page .tab-content .icon i {
     display: inline-block;
     padding: .20em .26em .19em .25em;
     -moz-border-radius:50%;
@@ -265,6 +265,29 @@ textarea {
     border: 2px solid #1CD6AB;
 }
 
+#search-page .artist-page {
+    height: 10em;
+    display: none;
+}
+
+#search-page .search-result {
+    display: inherit;
+}
+
+#search-page .exit-btn {
+    float:right;
+    display: inherit;
+    padding-right: 1em;
+
+}
+
+#search-page .exit-btn h1{
+    color: #CCC;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
 
 
 
