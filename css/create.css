@@ -70,6 +70,16 @@ div#tags > div.a_tag {
     padding: 0 5px;
 }
 
+div#tags > div.a_tag > p {
+	display: inline-block;
+}
+
+div#tags > div.a_tag > i {
+    float: right;
+    margin-top: 2px;
+    margin-left: 3px;
+}
+
 /* SEARCH BOXES */
 .container-1{
   vertical-align: middle;

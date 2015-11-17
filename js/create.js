@@ -51,39 +51,41 @@ var availableFriends = [
 ];
 
 function addGenre(val) {
-	var result = '<div class="a_tag"><p>#' + val + '</p></div>'
-	$('#add_genres > #tags').append(result);
+  var result = '<div class="a_tag"><p>#' + val + '</p><i id="remove" class="fa fa-times"></i></div>'
+
+  $('#add_genres > #tags').append(result);
+
+  $( 'i#remove' ).click(function() {
+    $(this).parent().remove();
+  });
 }
 
 function addFriends(val) {
-	console.log()
+  var result = '<div class="a_tag"><p>' + val + '</p><i id="remove" class="fa fa-times"></i></div>'
+
+  $('#add_friends > #tags').append(result);
+
+  $( 'i#remove' ).click(function() {
+    $(this).parent().remove();
+  });
 }
 
 $( "#search_genres" ).autocomplete({
   source: availableGenres,
   select: function (e, ui) {
   	var val = ui.item.value;
+    ui.item.value = '';
   	addGenre(val);
-    },
+  }
 });
 
 $( "#search_friends" ).autocomplete({
   source: availableFriends,
   select: function (e, ui) {
   	var val = ui.item.value;
+    ui.item.value = '';
   	addFriends(val);
-    },
-});
-
-$( "#search_genres" ).keyup(function(event){
-    if(event.keyCode == 13){
-        addGenre($(this).val());
     }
 });
 
-$( "#search_friends" ).keyup(function(event){
-    if(event.keyCode == 13){
-        addFriends($(this).val());
-    }
-});
 });
