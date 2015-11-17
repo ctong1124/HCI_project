@@ -1,0 +1,143 @@
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}   
+#createpartypage .searchbar {
+    position: relative;
+    height: 6em;
+    background-color: white;
+    border-bottom: .1em solid #ccc;
+}
+
+#createpartypage .box{
+  padding: 1em 0;
+  height: 1em;
+}
+
+#createpartypage .toolbar {
+    border-bottom: .1em solid #ccc;
+}
+
+#createpartypage .container-1{
+  width: 100%;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+#createpartypage .container-1 input#search{
+  width: 80%;
+  height: 2.25em;
+  background: #EBEBEB;
+  border: none;
+  font-size: 10pt;
+  /*float: left;*/
+  color: #63717f;
+  padding-left: 2.5em;
+  -webkit-border-radius: .25em;
+  -moz-border-radius: .25em;
+  border-radius: .25em;
+}
+
+#createpartypage #page {
+    margin-top: 10em;
+}
+#createpartypage .green_button{
+  background-color: #1CD6AB;
+  padding: 17px 65px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.4em;
+  display: inline-block;
+}
+
+#createpartypage .container-1 .icon{
+  position: absolute;
+  margin: .4em 0 0 .5em;
+  z-index: 1;
+  color: #4f5b66;
+}
+#createpartypage #page #parties .party{
+  padding: 1.3em 3em;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+#createpartypage #page #parties .party:hover{
+  cursor: pointer;
+}
+#createpartypage #page #parties .party h1{
+  color: #1CD6AB;
+}
+#createpartypage #page #parties .party h4{
+  size: .9em;
+  font-weight: 300;
+}
+#createpartypage #page #parties .party .info_icon{
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  height: 20px;
+  width: 20px;
+  padding: 0 4px 8px 4px;
+  border-radius: 50%;
+  color: #1CD6AB;
+  border: 2px solid #1CD6AB;
+  font-size: 1.3em;
+  text-align: center;
+  float: right;
+}
+#createpartypage #page #parties .party .expanded_information p{
+  padding-top: 20px;
+  size:9em;
+}
+#createpartypage #page #parties .party .expanded_information h4{
+  margin-bottom: 5px;
+}
+#createpartypage #page #parties .party .expanded_information .friends_list{
+  list-style: none;
+  display: block;
+  padding: 0;
+  margin-top: 10px;
+}
+#createpartypage #page #parties .party .expanded_information .friends_list li{
+  display: inline-block;
+  margin-right: 25px;
+  text-align: center;
+}
+#createpartypage #page #parties .party .expanded_information .friends_list li .placeholder_image{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+}
+#createpartypage #page #parties .party .expanded_information .friends_list li .name{
+  font-size: .8em;
+}
+#createpartypage #page #parties .party .hide{
+  display: none;
+}
+#createpartypage #page #parties .party .show{
+  display: block;
+}
+
+#createpartypage {
+  color: #8E8E93;
+}
+
+
+
