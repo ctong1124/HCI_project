@@ -143,6 +143,7 @@ textarea {
 
 #search-page #page {
     margin-top: 10em;
+    padding: 0;
 }
 
 #search-page .container-1 .icon{
@@ -202,7 +203,6 @@ textarea {
     border-bottom: 1px solid #CCC;
 }
 
-
 #search-page .entry .pic {
     float: left;
     width: 4em;
@@ -215,12 +215,16 @@ textarea {
     /*padding: .75em 0 .75em .75em;*/
     position: relative;
     padding-left: .75em;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-
     float: left;
+    vertical-align: center;
+    cursor: pointer;
+}
+
+#search-page .ver-align {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 #search-page .entry .info p{
@@ -237,11 +241,12 @@ textarea {
 
 #search-page h2 {
     font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
 }
 
 #search-page h3 {
     font-family: 'Lato', sans-serif;
-    font-size: .75em;
+    font-size: .8em;
 }
 #search-page p {
     font-family: 'Lato', sans-serif;
@@ -266,7 +271,10 @@ textarea {
 }
 
 #search-page .artist-page {
-    height: 10em;
+    display: none;
+}
+
+#search-page .album-page {
     display: none;
 }
 
@@ -289,7 +297,64 @@ textarea {
     -o-transform: rotate(45deg);
 }
 
+#search-page .exit-btn2 {
+    float:right;
+    display: inherit;
+    padding-right: 1em;
 
+}
+
+#search-page .exit-btn2 h1{
+    color: #CCC;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+#search-page h2 {
+  padding: 1em 0 0 1em;
+  color: #1CD6AB;
+}
+
+
+#search-page .song-entry {
+  height: 1.5em;
+  position: relative;
+  padding: 1em 0 1em 1em;
+}
+
+#search-page .song-entry h3 {
+  width: 80%;
+  height: 2em;
+  color: #CCC;
+  float: left;
+}
+
+#search-page .tab-content .song-entry .icon {
+  padding: 0 1.5em 0 0 ;
+}
+
+#search-page .song-entry:after {
+ content: '';
+  position: absolute;
+  width: 94%;
+  left: 3%;
+  bottom: 0;
+  border-bottom: 1px solid #CCC;
+}
+
+#search-page #albums .exit-btn {
+  z-index: 100;
+}
+#search-page #albums .entry {
+  z-index: 1;
+  float: none;
+}
+
+#search-page #myform input[type='submit'] { 
+  display: none; 
+}
 
 
 
