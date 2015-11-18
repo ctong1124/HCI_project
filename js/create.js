@@ -70,6 +70,10 @@ function addFriends(val) {
   });
 }
 
+$( "i#edit_party_name" ).click(function() {
+
+});
+
 $( "#search_genres" ).autocomplete({
   source: availableGenres,
   select: function (e, ui) {

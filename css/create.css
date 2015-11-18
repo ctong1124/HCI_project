@@ -1,21 +1,28 @@
-div#create_button {
-	height: 3em;
-	background-color: #ccc;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	text-align: center;
-}
+
 
 div.add {
 	display: inline-block;
 	width: 100%;
+	margin-bottom: .5em;
 }
 
 div.add > div.box {
 	float: left;
 	width: 60%;
+}
+
+div#party_name > h2 {
+   display: inline-block;
+}
+
+div#party_name > i {
+   cursor: pointer;
+}
+
+div#party_settings {
+    margin-top: 1em;
+    border-top: 1px solid #ccc;
+    padding-top: 1em;
 }
 
 /** PRIVACY **/
@@ -58,7 +65,9 @@ div#add_friends > div.box {
 }
 
 div#tags {
-	clear: both;
+	display: inline-block;
+    clear: both;
+    margin-top: .5em;
 }
 
 div#tags > div.a_tag {
@@ -122,4 +131,29 @@ div#tags > div.a_tag > i {
   right: 0;
   z-index: 1;
   color: #4f5b66;
+}
+
+#footer_dialog {
+    width: 85%;
+    margin: auto;
+    position: fixed;
+    bottom: 14px;
+    left: 0;
+    right: 0;
+}
+
+#footer_dialog > h2 {
+	display: inline-block;
+	border-radius: 5px;
+	padding: 0 1em;
+}
+
+#create_button {
+	background-color: #1CD6AB;
+	color: white;
+}
+
+#cancel {
+	background-color: #ccc;
+	color: white;
 }
