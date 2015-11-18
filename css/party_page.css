@@ -94,15 +94,113 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
 #party-page {
-    height: 10em;
-    background-color: #CCC;
+  color: #8E8E93;
 }
-
-
-
-
+#party-page #container {
+  margin-bottom: 0;
+}
+#party-page #page {
+  padding: 0;
+  margin-top: 4.05em;
+}
+#party-page #ios_header{
+    z-index: 1000;
+}
+#party-page #page #party_description{
+  background-color: #EBEBEB;
+  padding: 1em 2em 2em 2em;
+}
+#party-page #page #party_description p{
+  padding-top: 20px;
+  size:9em;
+}
+#party-page #page #party_description h4{
+  margin-bottom: 5px;
+}
+#party-page #page #party_description .friends_list{
+  list-style: none;
+  display: block;
+  padding: 0;
+  margin-top: 10px;
+}
+#party-page #page #party_description .friends_list li{
+  display: inline-block;
+  margin-right: 25px;
+  text-align: center;
+}
+#party-page #page #party_description .friends_list li .placeholder_image{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+}
+#party-page #page #party_description .friends_list li .name{
+  font-size: .8em;
+}
+#party-page #page #song_list {
+    display: block;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+#party-page #page #song_list #play_bar {
+    height: 5px;
+    width: 60%;
+    background-color: #1CD6AB;
+}
+#party-page #page #song_list li {
+    border-bottom: 1px solid #ccc;
+}
+#party-page #page #song_list #current_song {
+    background-color: #f7f7f7;
+}
+#party-page #page #song_list .song {
+    height: 8em;
+    padding: 2em 2em 2em 12em;
+    position: relative;
+}
+#party-page #page #song_list .song img {
+    width: 8em;
+    position: absolute;
+    top: 2em;
+    left: 2em;
+}
+#party-page #page #song_list .song h1 {
+    color: #1CD6AB;
+    margin-top: 1.3em;
+    font-size: 1.5em;
+}
+#party-page #page #song_list .song h3 {
+    font-size: .9em;
+}
+#party-page #page #song_list .song .voting {
+    height: 8em;
+    width: 4em;
+    position: absolute;
+    top: 3.5em;
+    right: 2em;
+    text-align: center;
+}
+#party-page #page #song_list .song .arrow {
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    padding: .5em 0;
+}
+#party-page #page #song_list .song .green {
+    color: #1CD6AB;
+}
+#party-page #page #add_song {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 1em 0;
+    background-color: #1CD6AB;
+    font-size: 4em;
+    text-decoration: none;
+}
 
 
 
