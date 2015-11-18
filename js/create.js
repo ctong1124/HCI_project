@@ -22,7 +22,8 @@ var availableGenres = [
   "Doom-Core",
   "Death-Core",
   "Black-Metal",
-  "Death-Metal"
+  "Death-Metal",
+  "Alt-Rock"
 ];
 
 var availableFriends = [
@@ -47,7 +48,8 @@ var availableFriends = [
   "Mara Gallagher",
   "Francis Hollande",
   "Black Francis",
-  "Francis Bean"
+  "Francis Bean",
+  "Sam Jenkins"
 ];
 
 function addGenre(val) {
