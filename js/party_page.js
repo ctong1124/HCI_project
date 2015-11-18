@@ -13,15 +13,25 @@ var party_page={
 
 jQuery(document).ready(function($){
 
-    $('#party-page').on("click", function(){
+    // $('#party-page').on("click", function(){
     var myObject = JSON.parse(sessionStorage.getItem('add'));
       
       party_page.entries.push(myObject);
 
       console.log(party_page.entries[1]);
-      sessionStorage.removeItem('add');
 
-    });
+      output = "<li><div class=\"song\"><img src=\"img/album10.jpg\"><h1>";
+      output += party_page.entries[1]["song"];
+      output += "</h1><h3>";
+      output += party_page.entries[1]["artist"];
+      output += "</h3><div class=\"voting\"><i class=\"arrow fa fa-arrow-up\"></i><span>0</span><i class=\"arrow fa fa-arrow-down\"></i></div></div></li>";
+
+
+       $('#party-page .addsong').html(output);
+      
+      //sessionStorage.removeItem('add');
+
+    // });
     
 
 });

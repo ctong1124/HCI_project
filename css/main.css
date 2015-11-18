@@ -163,7 +163,10 @@ div#ios_header {
 
 div#system_bar {
     height: 1em;
-    background-color: #ccc;
+}
+
+div#system_bar > img {
+    width: 100%;
 }
 
 div#ios_header > h1 {
@@ -173,19 +176,23 @@ div#ios_header > h1 {
     right: 0;
 }
 
-div#ios_header > .toolbar > img{
+div#ios_header > .toolbar > a {
     height: 2em;
     width: 2em;
-    background-color: #ccc;
-    /*position: absolute;*/
+    position: absolute;
 }
 
-div#ios_header > .toolbar > img#hamburger {
+div#ios_header > a#hamburger {
+    position: absolute;
     bottom: 5px;
     left: 5px;
 }
 
-div#ios_header > .toolbar > h1{
+div#ios_header > a#hamburger > i {
+    color: #ccc;
+}
+
+div#ios_header > .toolbar > h1 {
     display:inline-block;
 }
 
