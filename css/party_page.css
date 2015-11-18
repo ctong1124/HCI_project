@@ -156,37 +156,39 @@ textarea {
     background-color: #f7f7f7;
 }
 #party-page #page #song_list .song {
-    height: 8em;
-    padding: 2em 2em 2em 12em;
+    height: 5em;
+    padding: 2em 2em 2em 8em;
     position: relative;
 }
 #party-page #page #song_list .song img {
-    width: 8em;
+    width: 5em;
     position: absolute;
     top: 2em;
     left: 2em;
 }
 #party-page #page #song_list .song h1 {
     color: #1CD6AB;
-    margin-top: 1.3em;
-    font-size: 1.5em;
+    margin-top: 1em;
+    font-size: 1em;
+    padding-right: 4em;
 }
 #party-page #page #song_list .song h3 {
-    font-size: .9em;
+    font-size: .6em;
+    padding-right: 4em;
 }
 #party-page #page #song_list .song .voting {
-    height: 8em;
+    height: 5em;
     width: 4em;
     position: absolute;
-    top: 3.5em;
+    top: 2em;
     right: 2em;
     text-align: center;
 }
 #party-page #page #song_list #current_song .song .voting {
-    height: 8em;
+    height: 5em;
     width: 4em;
     position: absolute;
-    top: 4.5em;
+    top: 3em;
     right: 2em;
     text-align: center;
     color: #1CD6AB;
