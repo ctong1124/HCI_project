@@ -196,9 +196,7 @@ jQuery(document).ready(function($){
         //console.log(party_page.entries[1]);
         myObject = {"song": data.music[ID]["song"], "artist": data.music[ID]["artist"], "album": data.music[ID]["album"], "votes": 0, "my_vote": 0 };
         sessionStorage.setItem('add', JSON.stringify(myObject));
-        console.log(sessionStorage.getItem(JSON.parse(localStorage.getItem('add'))));
-        //sessionStorage.setItem('add', "added");
-        //window.location.replace("party_page.html");
+        window.location.replace("party_page.html");
     });
 
 
