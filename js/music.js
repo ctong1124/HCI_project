@@ -168,5 +168,121 @@ var data={
             "year": 2010,
             "tracknum": 14,
         },
+        {
+            "song": "Good Morning",
+            "artist": "Kanye West",
+            "album": "Graduation",
+            "year": 2007,
+            "tracknum": 1,
+        },
+        {
+            "song": "Champion",
+            "artist": "Kanye West",
+            "album": "Graduation",
+            "year": 2007,
+            "tracknum": 2,
+        },
+        {
+            "song": "Stronger",
+            "artist": "Kanye West",
+            "album": "Graduation",
+            "year": 2007,
+            "tracknum": 3,
+        },
+        {
+            "song": "I Wonder",
+            "artist": "Kanye West",
+            "album": "Graduation",
+            "year": 2007,
+            "tracknum": 4,
+        },
+        {
+            "song": "Good Life",
+            "artist": "Kanye West",
+            "album": "Graduation",
+            "year": 2007,
+            "tracknum": 5,
+        },
+        {
+            "song": "Can't Tell Me Nothing",
+            "artist": "Kanye West",
+            "album": "Graduation",
+            "year": 2007,
+            "tracknum": 6,
+        },
+        {
+            "song": "Barry Bonds",
+            "artist": "Kanye West",
+            "album": "Graduation",
+            "year": 2007,
+            "tracknum": 7,
+        },
+        {
+            "song": "Drunk & Hot Girls",
+            "artist": "Kanye West",
+            "album": "Graduation",
+            "year": 2007,
+            "tracknum": 8,
+        },
+        {
+            "song": "Flashing Lights",
+            "artist": "Kanye West",
+            "album": "Graduation",
+            "year": 2007,
+            "tracknum": 9,
+        },
+        {
+            "song": "Everything I Am",
+            "artist": "Kanye West",
+            "album": "Graduation",
+            "year": 2007,
+            "tracknum": 10,
+        },
+        {
+            "song": "The Glory",
+            "artist": "Kanye West",
+            "album": "Graduation",
+            "year": 2007,
+            "tracknum": 11,
+        },
+        {
+            "song": "Homecoming",
+            "artist": "Kanye West",
+            "album": "Graduation",
+            "year": 2007,
+            "tracknum": 12,
+        },
+        {
+            "song": "Big Brother",
+            "artist": "Kanye West",
+            "album": "Graduation",
+            "year": 2007,
+            "tracknum": 13,
+        },
+        {
+            "song": "Good Night",
+            "artist": "Kanye West",
+            "album": "Graduation",
+            "year": 2007,
+            "tracknum": 14,
+        },
+        {
+            "song": "Bittersweet Poetry",
+            "artist": "Kanye West",
+            "album": "Graduation",
+            "year": 2007,
+            "tracknum": 15,
+        },
+        {
+            "song": "One More Time",
+            "artist": "Daft Punk",
+            "album": "Discovery",
+            "year": 2001,
+            "tracknum": 1,
+        }
 ]}
+
+
+
+
 
