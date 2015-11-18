@@ -182,6 +182,18 @@ textarea {
     right: 2em;
     text-align: center;
 }
+#party-page #page #song_list #current_song .song .voting {
+    height: 8em;
+    width: 4em;
+    position: absolute;
+    top: 4.5em;
+    right: 2em;
+    text-align: center;
+    color: #1CD6AB;
+}
+#party-page #page #song_list #current_song .song .voting i {
+    font-size: 3em;
+}
 #party-page #page #song_list .song .arrow {
     cursor: pointer;
     display: block;
