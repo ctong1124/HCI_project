@@ -14,9 +14,12 @@ var party_page={
 jQuery(document).ready(function($){
 
     $('#party-page').on("click", function(){
-        //var myObject = JSON.parse(localStorage.getItem('add'));
-      //console.log(myObject);
-      console.log(sessionStorage.getItem('add'));
+    var myObject = JSON.parse(sessionStorage.getItem('add'));
+      
+      party_page.entries.push(myObject);
+
+      console.log(party_page.entries[1]);
+      sessionStorage.removeItem('add');
 
     });
     
