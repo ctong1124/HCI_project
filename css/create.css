@@ -7,16 +7,28 @@ div.add {
 }
 
 div.add > div.box {
-	float: left;
-	width: 60%;
+	float: right;
+	width: 55%;
 }
 
 div#party_name > h2 {
+   color: #1CD6AB;
    display: inline-block;
+   color: ;
 }
 
 div#party_name > i {
+	color: #ccc;
    cursor: pointer;
+}
+
+div#party_description > p {
+	display: inline-block;
+}
+
+div#party_description > i {
+	color: #ccc;
+	cursor: pointer;
 }
 
 div#party_settings {
@@ -57,7 +69,7 @@ div#add_friends {
 }
 
 div#add_friends > h3 {
-	width: 120px;
+	width: 105px;
 	float: left;
 }
 
@@ -77,6 +89,7 @@ div#tags > div.a_tag {
     color: white;
     border-radius: 5px;
     padding: 0 5px;
+    margin-top: 5px;
 }
 
 div#tags > div.a_tag > p {
@@ -134,7 +147,7 @@ div#tags > div.a_tag > i {
 }
 
 #footer_dialog {
-    width: 85%;
+    width: 90%;
     margin: auto;
     position: fixed;
     bottom: 14px;
@@ -145,7 +158,7 @@ div#tags > div.a_tag > i {
 #footer_dialog > h2 {
 	display: inline-block;
 	border-radius: 5px;
-	padding: 0 1em;
+	padding: 0 .75em;
 }
 
 #create_button {
