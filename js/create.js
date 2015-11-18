@@ -71,7 +71,11 @@ function addFriends(val) {
 }
 
 $( "i#edit_party_name" ).click(function() {
+  $("#party_name > h2").focus();
+});
 
+$( "i#edit_party_description" ).click(function() {
+  $("#party_description > p").focus();
 });
 
 $( "#search_genres" ).autocomplete({
