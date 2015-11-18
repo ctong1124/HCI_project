@@ -178,5 +178,9 @@ div#tags > div.a_tag > i {
 
 #cancel {
 	background-color: #ccc;
+}
+
+#cancel > a{
+	text-decoration: none;
 	color: white;
 }
