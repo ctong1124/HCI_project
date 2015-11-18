@@ -163,7 +163,10 @@ div#ios_header {
 
 div#system_bar {
     height: 1em;
-    background-color: #ccc;
+}
+
+div#system_bar > img {
+    width: 100%;
 }
 
 div#ios_header > h1 {
@@ -176,7 +179,6 @@ div#ios_header > h1 {
 div#ios_header > .toolbar > a {
     height: 2em;
     width: 2em;
-    background-color: #ccc;
     position: absolute;
 }
 
