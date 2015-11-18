@@ -272,6 +272,13 @@ var data={
             "album": "Graduation",
             "year": 2007,
             "tracknum": 15,
+        },
+        {
+            "song": "One More Time",
+            "artist": "Daft Punk",
+            "album": "Discovery",
+            "year": 2001,
+            "tracknum": 1,
         }
 ]}
 
