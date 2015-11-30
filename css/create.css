@@ -25,7 +25,7 @@ div#party_name > i {
 }
 
 div#party_description > p {
-	color: #ccc;
+	color: #4f5b66;
 	display: inline-block;
 }
 
@@ -35,8 +35,6 @@ div#party_description > i {
 }
 
 div#party_settings {
-    margin-top: 1em;
-    border-top: 1px solid #ccc;
     padding-top: 1em;
 }
 
@@ -51,7 +49,7 @@ div#privacy > h3 {
 
 div#privacy > form {
 	float: left;
-	color: #ccc;
+	color: #4f5b66;
 }
 
 /** GENRES **/
@@ -62,7 +60,7 @@ div#add_genres {
 div#add_genres > h3 {
 	width: 120px;
 	float: left;
-	color: #ccc;
+	color: #4f5b66;
 }
 
 div#add_genres > div.box {
@@ -76,7 +74,7 @@ div#add_friends {
 div#add_friends > h3 {
 	width: 105px;
 	float: left;
-	color: #ccc;
+	color: #4f5b66;
 }
 
 div#add_friends > div.box {
@@ -126,7 +124,7 @@ div#tags > div.a_tag > i {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    border: 3px solid #ccc;
+    border: 3px solid #4f5b66;
 }
 
 .container-1 input.search::-webkit-input-placeholder {

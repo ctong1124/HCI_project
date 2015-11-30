@@ -74,10 +74,12 @@ function addFriends(val) {
 
 $( "i#edit_party_name" ).click(function() {
   $("#party_name > h2").focus();
+  $("#party_name > h2").html('');
 });
 
 $( "i#edit_party_description" ).click(function() {
   $("#party_description > p").focus();
+  $("#party_description > p").html('');
 });
 
 $( "#search_genres" ).autocomplete({
