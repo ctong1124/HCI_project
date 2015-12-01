@@ -1,9 +1,29 @@
 jQuery(document).ready(function($){
 
+    //populate recs at the beginning
+    //{album: year}
+    // recs = {}
+    // for (var i in data.music) {
+    //     entry = data.music[i]
+    //     if (!(entry.album in discog)){
+    //         recs[entry.album] = entry.year;
+    //    }
+    // }
 
+
+
+    recs_gone_huh = 0;
     //form stuff
     $("#myform").on("submit", function(event){
       event.preventDefault();
+ 
+      //get rid of recommendations
+      if (recs_gone_huh == 0) {
+        $("#songs").addClass('current');
+        $("li.tab-link").first().addClass('current');
+        $("#recs").css('display','none');
+        recs_gone_huh = 1;
+    }
 
       if ($('.artist-page').css('display') != "none") {
           $(".artist-page").css('display', 'none');
@@ -47,12 +67,17 @@ jQuery(document).ready(function($){
         song_output = "<h2 class=\"bold\">No results found.</h2>";
       } else {
           for (var key in fill_songs) {
-            song_output += "<div class=\"entry \"><div class=\"songID\">"+ fill_songs[key] +"</div><div class=\"pic\"></div><div class=\"info ver-align\"><h3 class=\"bold\">";
+            album = data.music[fill_songs[key]].album;
+
+            song_output += "<div class=\"entry \"><div class=\"songID\">"+ fill_songs[key] ;
+            song_output += "</div><div class=\"pic\"><img src=\""
+            song_output += data.covers[album];
+            song_output += "\"></div><div class=\"info ver-align\"><h3 class=\"bold\">";
             song_output += key;
             song_output += "</h3><p class=\"normal\">";
             song_output += data.music[fill_songs[key]].artist;
             song_output += "</p><p class=\"normal\">";
-            song_output += data.music[fill_songs[key]].album;
+            song_output += album;
             song_output += "</p></div><div class=\"icon\"><i class=\"fa fa-plus\"></i></div></div>"
         }
       }
@@ -65,7 +90,9 @@ jQuery(document).ready(function($){
         album_output = "<h2 class=\"bold\">No results found.</h2>";
       } else {
         for (var key in fill_albums) {
-          album_output += "<div class=\"entry \"><div class=\"pic\"></div><div class=\"info ver-align\"><h3 class=\"bold\">";
+          album_output += "<div class=\"entry \">";
+            album_output += "<div class=\"pic\"> <img src=\""+ data.covers[key]+"\"></div>";
+          album_output += "<div class=\"info ver-align\"><h3 class=\"bold\">";
           album_output += key;
           album_output += "</h3><p class=\"normal\">";
           album_output += data.music[fill_albums[key]].artist;
@@ -83,7 +110,9 @@ jQuery(document).ready(function($){
        artist_output = "<h2 class=\"bold\">No results found.</h2>";
       } else {
         for (var key in fill_artists) {
-          artist_output +="<div class=\"entry \"><div class=\"pic\"></div><div class=\"info ver-align\"><h3 class=\"bold\">";
+          artist_output +="<div class=\"entry \"><div class=\"pic\">";
+          artist_output +="<img src=\"" + data.artists[key] + "\">";
+          artist_output +="</div><div class=\"info ver-align\"><h3 class=\"bold\">";
           artist_output += key;
           artist_output += "</h3></div></div>";
         }
@@ -119,6 +148,7 @@ jQuery(document).ready(function($){
     function populate_artist_page(a) {
         //{album: year}
         albums = {}
+
         //{album: {songID: song},
         // album: {songID: song}, 
         // album: {songID: song}}
@@ -139,13 +169,17 @@ jQuery(document).ready(function($){
                 discog[entry.album][i] = entry.song;
             }
         }
+        console.log(albums);
+        console.log(discog);
         //return albums;
 
         output = "<div class=\"exit-btn\"><h1 class=\"normal\">+</h1></div><h2>";
         output += a + "</h2>";
 
         for (var al in discog) {
-            output += "<div class=\"entry \"><div class=\"pic\"></div><div class=\"info ver-align\"><h3 class=\"bold\">";
+            output += "<div class=\"entry \"><div class=\"pic\">";
+            output += "<img src=\"" + data.covers[al] + "\">";
+            output += "</div><div class=\"info ver-align\"><h3 class=\"bold\">";
             output += al;
             output += "</h3><p class=\"normal\">";
             output += albums[al];
@@ -161,6 +195,40 @@ jQuery(document).ready(function($){
         $('#artists .artist-page').html(output);
 
     }
+
+    function populate_album_page(al) {
+        d_album = {};
+        artist = "";
+        year = 0;
+        for (var i in data.music) {
+            entry = data.music[i]
+            if(entry.album == al) {
+                d_album[i] = entry.song;
+                artist = entry.artist;
+                year = entry.year;
+            }
+        }
+
+        output = "<div class=\"exit-btn\"><h1 class=\"normal\">+</h1></div><br><div class=\"entry \"><div class=\"pic\">";
+        output += "<img src=\""+ data.covers[al]+"\">";
+
+        output += "</div><div class=\"info ver-align\"><h3 class=\"bold\">";
+        output += al;
+        output += "</h3><p class=\"normal\">";
+        output += artist;
+        output += "</p><p class=\"normal\">";
+        output += year;
+        output += "</p></div></div>";
+
+        for (var id in d_album) {
+            output += "<div class=\"song-entry \"><div class=\"songID\">"+ id +"</div><h3 class=\"normal\">";
+            output += data.music[id].tracknum + ". "+ d_album[id];
+            output += "</h3><div class=\"icon\"><i class=\"fa fa-plus\"></i></div></div>";
+        }
+                                
+        $('#albums .album-page').html(output);
+
+    }
         
 
     // opening and closing artist/album page 
@@ -173,7 +241,7 @@ jQuery(document).ready(function($){
 
     $(document).on("click", '#albums .search-result .info', function(){
         $(this).closest(".search-result").css('display', 'none');
-        //populate album-page
+        populate_album_page($(event.target).text());
         $(this).closest(".tab-content").find(".album-page").css('display', 'inherit');
     });
 
@@ -192,10 +260,15 @@ jQuery(document).ready(function($){
 
     $(document).on("click", '#songs .icon', function(){
         ID = $(this).siblings(".songID").html();
-        //party_page.entries.push({"song": data.music[ID]["song"], "artist": data.music[ID]["artist"], "album": data.music[ID]["album"], "votes": 0, "my_vote": 0 })
-        //console.log(party_page.entries[1]);
         myObject = {"song": data.music[ID]["song"], "artist": data.music[ID]["artist"], "album": data.music[ID]["album"], "votes": 0, "my_vote": 0 };
         sessionStorage.setItem('add', JSON.stringify(myObject));
+        
+
+
+        var session = JSON.parse(sessionStorage.getItem('session'));
+        adding = {"song": data.music[ID]["song"], "artist": data.music[ID]["artist"], "album": data.music[ID]["album"], "votes": 0, "my_vote": 0 };
+        session["Playlist"].push(adding);
+        sessionStorage.setItem('session', JSON.stringify(myObject));
         window.location.replace("party_page.html");
     });
 

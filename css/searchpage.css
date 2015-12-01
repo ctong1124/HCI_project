@@ -144,7 +144,7 @@ textarea {
 }
 
 #search-page #page {
-    margin-top: 10em;
+    margin-top: 0;
     padding: 0;
     background-color: white;
 }
@@ -212,6 +212,28 @@ textarea {
     height: 4em;
     background-color: #EBEBEB;
 }
+#search-page .entry .pic img {
+  width: 4em;
+  height:4em;
+}
+
+#search-page .recs .pic img {
+  width:95%;
+}
+
+#search-page .recs {
+  padding: 1em;
+}
+#search-page .recs h2{
+  padding: 0 0 1em 0;
+}
+
+#search-page .recs .r_pics {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
 
 #search-page .entry .info {
     width: 65%;

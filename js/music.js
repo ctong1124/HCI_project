@@ -280,7 +280,19 @@ var data={
             "year": 2001,
             "tracknum": 1,
         }
-]}
+    ],
+    "covers": {
+        "My Beautiful Dark Twisted Fantasy": "https://upload.wikimedia.org/wikipedia/en/f/f0/My_Beautiful_Dark_Twisted_Fantasy.jpg",
+        "Graduation": "https://upload.wikimedia.org/wikipedia/en/7/70/Graduation_(album).jpg",
+        "Yeezus": "https://griffinmiller47.files.wordpress.com/2014/08/tumblr_moelxko29e1qjo50co1_1371248265_cover.jpg",
+        "Discovery": "https://upload.wikimedia.org/wikipedia/en/a/ae/Daft_Punk_-_Discovery.jpg"
+    },
+    "artists": {
+        "Kanye West": "http://assets.rollingstone.com/assets/images/artists/kanye-west.jpg",
+        "Daft Punk": "http://www.harderbloggerfaster.com/wp-content/uploads/2015/04/11052439_10153091601470673_6852645804799973936_n.jpg"
+    }
+
+}
 
 
 

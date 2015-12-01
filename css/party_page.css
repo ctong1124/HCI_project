@@ -102,7 +102,7 @@ textarea {
 }
 #party-page #page {
   padding: 0;
-  margin-top: 4.05em;
+  margin-top: 5em;
 }
 #party-page #ios_header{
     z-index: 1000;
@@ -152,6 +152,10 @@ textarea {
 #party-page #page #song_list li {
     border-bottom: 1px solid #ccc;
 }
+#party-page #page #song_list {
+    margin-bottom: 6em;
+}
+
 #party-page #page #song_list #current_song {
     background-color: #f7f7f7;
 }
@@ -212,8 +216,10 @@ textarea {
     color: white;
     padding: 1em 0;
     background-color: #1CD6AB;
-    font-size: 4em;
+    font-size: 1.5em;
     text-decoration: none;
+    position: fixed;
+    bottom: 0;
 }
 
 
