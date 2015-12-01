@@ -12,6 +12,8 @@ var party_page={
 
 
 jQuery(document).ready(function($){
+    console.log("session");
+    console.log(JSON.parse(sessionStorage.getItem('session')));
 
     // $('#party-page').on("click", function(){
     var myObject = JSON.parse(sessionStorage.getItem('add'));
@@ -29,7 +31,7 @@ jQuery(document).ready(function($){
 
        $('#party-page .addsong').html(output);
 
-      console.log(JSON.parse(sessionStorage.getItem('session')));
+      
       
       //sessionStorage.removeItem('add');
 

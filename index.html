@@ -43,6 +43,7 @@
 
             initial = {"Created": {},"Joined": {},"Playlist": []};
             sessionStorage.setItem('session', JSON.stringify(initial));
+            console.log(JSON.parse(sessionStorage.getItem('session')));
 
         });
         </script>

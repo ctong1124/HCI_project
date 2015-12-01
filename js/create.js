@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  // console.log("session");
+  // console.log(JSON.parse(sessionStorage.getItem('session')));
 
 var availableGenres = [
   "Post-Rock",
@@ -84,6 +86,8 @@ $( "i#edit_party_description" ).click(function() {
 
 
 $( "h2#create_button" ).click(function() {
+
+  var session = JSON.parse(sessionStorage.getItem('session'));
   myObject = {
     "party_name": $("#party_name > h2").text(),
     "party_description": $("#party_description > p").text(),
@@ -92,7 +96,9 @@ $( "h2#create_button" ).click(function() {
     "privacy": $('input[name=privacy]:checked', '#privacy > form').val()
   };
 
-  sessionStorage.setItem('session', JSON.stringify(myObject));
+  session["Created"] = myObject;
+
+  sessionStorage.setItem('session', JSON.stringify(session));
 });
 
 $( "#search_genres" ).autocomplete({
