@@ -107,9 +107,13 @@ textarea {
 #party-page #ios_header{
     z-index: 1000;
 }
+
+
+
 #party-page #page #party_description{
   background-color: #EBEBEB;
   padding: 1em 2em 2em 2em;
+  display: none;
 }
 #party-page #page #party_description p{
   padding-top: 20px;
@@ -222,6 +226,16 @@ textarea {
     bottom: 0;
 }
 
+#party-page img#addfriend {
+  float:right;
+  padding-right: .5em;
+} 
+
+#party-page .toolbar #info {
+  float:right;
+  padding: .5em .75rem 0 0;
+  font-size: 1.75em;
+} 
 
 
 

@@ -15,6 +15,10 @@ jQuery(document).ready(function($){
     console.log("session");
     console.log(JSON.parse(sessionStorage.getItem('session')));
 
+    $( "#info" ).click(function() {
+      $( "#party_description" ).toggle("medium");
+    });
+
     // $('#party-page').on("click", function(){
     var myObject = JSON.parse(sessionStorage.getItem('add'));
       

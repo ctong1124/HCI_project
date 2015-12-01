@@ -101,7 +101,12 @@ textarea {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-}   
+}  
+
+#search-page img#back2party {
+  float:right;
+  padding-right: .5em;
+} 
 
 #search-page .searchbar {
     position: relative;
