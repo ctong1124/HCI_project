@@ -82,6 +82,19 @@ $( "i#edit_party_description" ).click(function() {
   $("#party_description > p").html('');
 });
 
+
+$( "h2#create_button" ).click(function() {
+  myObject = {
+    "party_name": $("#party_name > h2").text(),
+    "party_description": $("#party_description > p").text(),
+    "guests": getFriends(),
+    "genres": getGenres(),
+    "privacy": $('input[name=privacy]:checked', '#privacy > form').val()
+  };
+
+  sessionStorage.setItem('session', JSON.stringify(myObject));
+});
+
 $( "#search_genres" ).autocomplete({
   source: availableGenres,
   select: function (e, ui) {
@@ -99,5 +112,38 @@ $( "#search_friends" ).autocomplete({
   	addFriends(val);
     }
 });
+
+function getFriends() {
+  var results = [];
+  var targetTags = $("div#add_friends > div#tags > div.a_tag");
+  var lengthOf = $(targetTags.length);
+
+  if (lengthOf === 0) { //if there are no tags
+    return results;
+  }
+  else {
+    $(targetTags).each(function() { //otherwise, parse away
+      results.push($("p", this).html());
+    }); 
+  } 
+  return results;
+}
+
+function getGenres() {
+  var results = [];
+  var targetTags = $("div#add_genres > div#tags > div.a_tag");
+  var lengthOf = $(targetTags.length);
+
+  if (lengthOf === 0) { //if there are no tags
+    return results;
+  }
+  else {
+    $(targetTags).each(function() { //otherwise, parse away
+      results.push($("p", this).html());
+    }); 
+  } 
+  return results;
+
+}
 
 });

@@ -18,16 +18,18 @@ jQuery(document).ready(function($){
       
       party_page.entries.push(myObject);
 
-      console.log(party_page.entries[1]);
+      console.log(party_page.entries[0]);
 
       output = "<li><div class=\"song\"><img src=\"img/album10.jpg\"><h1>";
-      output += party_page.entries[1]["song"];
+      output += party_page.entries[0]["song"];
       output += "</h1><h3>";
-      output += party_page.entries[1]["artist"];
+      output += party_page.entries[0]["artist"];
       output += "</h3><div class=\"voting\"><i class=\"arrow fa fa-arrow-up\"></i><span>0</span><i class=\"arrow fa fa-arrow-down\"></i></div></div></li>";
 
 
        $('#party-page .addsong').html(output);
+
+      console.log(JSON.parse(sessionStorage.getItem('session')));
       
       //sessionStorage.removeItem('add');
 
