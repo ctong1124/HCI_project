@@ -18,9 +18,11 @@
 }   
 #joinpartypage .searchbar {
     position: relative;
-    height: 6em;
+    height: 4em;
     background-color: white;
     border-bottom: .1em solid #ccc;
+    margin-top: 5em;
+    text-align: center;
 }
 
 #joinpartypage .box{
@@ -28,8 +30,8 @@
   height: 1em;
 }
 
-#joinpartypage .toolbar {
-    border-bottom: .1em solid #ccc;
+#joinpartypage #page{
+  margin-top: 0em;
 }
 
 #joinpartypage .container-1{
@@ -52,10 +54,10 @@
   -moz-border-radius: .25em;
   border-radius: .25em;
 }
-
+/*
 #joinpartypage #page {
     margin-top: 10em;
-}
+}*/
 #joinpartypage .green_button{
   background-color: #1CD6AB;
   padding: 17px 65px;
@@ -73,7 +75,7 @@
   color: #4f5b66;
 }
 #joinpartypage #page #parties .party{
-  padding: 1.3em 3em;
+  padding: 1em 1em;
   border-bottom: 1px solid #ccc;
   position: relative;
 }

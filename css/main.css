@@ -151,7 +151,7 @@ div#container {
 }
 
 div#ios_header {
-    height: 4em;
+    height: 5em;
     border-bottom: 1px solid #ccc;
     text-align: center;
     position: fixed;
@@ -161,9 +161,9 @@ div#ios_header {
     background-color: white;
 }
 
-div#system_bar {
+/*div#system_bar {
     height: 1em;
-}
+}*/
 
 div#system_bar > img {
     width: 100%;
@@ -176,19 +176,35 @@ div#ios_header > h1 {
     right: 0;
 }
 
-div#ios_header > .toolbar > a {
+/*div#ios_header > .toolbar {
+    height: 4em;
+}*/
+
+div#ios_header > .toolbar > a#hamburger {
     height: 2em;
     width: 2em;
     position: absolute;
 }
 
-div#ios_header > a#hamburger {
-    position: absolute;
-    bottom: 5px;
-    left: 5px;
+div#ios_header a#hamburger {
+    position: fixed;
+    bottom: .25em;
+    left: .25em;
+
 }
 
-div#ios_header > a#hamburger > i {
+/*div#ios_header .toolbar {
+    height: 3em;
+}*/
+
+div #ios_header .toolbar img {
+    height: 2em;
+    /*width: 30%;*/
+    padding-top: 1em;
+}
+
+
+div#ios_header  a#hamburger i {
     color: #ccc;
 }
 

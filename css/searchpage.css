@@ -108,6 +108,8 @@ textarea {
     height: 6em;
     background-color: white;
     border-bottom: .1em solid #ccc;
+    margin-top: 5em;
+    text-align: center;
 
 }
 
@@ -117,7 +119,7 @@ textarea {
 }
 
 #search-page .toolbar {
-    border-bottom: .1em solid #ccc;
+    /*border-bottom: .1em solid #ccc;*/
 }
 
 #search-page .container-1{
