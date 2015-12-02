@@ -116,8 +116,13 @@ textarea {
   display: none;
 }
 #party-page #page #party_description p{
-  padding-top: 20px;
+  padding-top: 0px;
   size:9em;
+}
+#party-page #page #party_description h3{
+  color: #1CD6AB;
+  font-size: 1.8rem;
+  margin-bottom: .3rem;
 }
 #party-page #page #party_description h4{
   margin-bottom: 5px;

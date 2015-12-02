@@ -91,14 +91,12 @@
 }
 #joinpartypage #page #parties .party .info_icon{
   position: absolute;
-  right: 35px;
-  top: 35px;
+  right: 25px;
+  bottom: 20px;
   height: 20px;
   width: 20px;
   padding: 0 4px 8px 4px;
-  border-radius: 50%;
   color: #1CD6AB;
-  border: 2px solid #1CD6AB;
   font-size: 1.3em;
   text-align: center;
   float: right;

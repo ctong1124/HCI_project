@@ -53,8 +53,8 @@
                             <div class="party">
                                    <h1>John's Birthday Bash</h1>
                                    <h3>Created by John Doe</h3>
-                                   <div class="info_icon">i</div>
-                                   <div class="expanded_information hide">
+                                   <i class="info_icon fa fa-plus"></i>
+                                   <div class="expanded_information" style="display:none;">
                                           <p>Come and hang out</p>
                                           <h4>friends attending</h4>
                                           <ul class="friends_list">
@@ -81,8 +81,8 @@
                             <div class="party">
                                    <h1>Housewarming</h1>
                                    <h3>Created by Jane Doe</h3>
-                                   <div class="info_icon">i</div>
-                                   <div class="expanded_information hide">
+                                   <i class="info_icon fa fa-plus"></i>
+                                   <div class="expanded_information" style="display:none;">
                                           <p> This is a super cool party. All of the important part information will go here. Everyone should join this party because this is a super awesome party because we are using the spot app to collectively, collaboratively play our music. </p>
                                           <h4>friends attending</h4>
                                           <ul class="friends_list">
@@ -109,8 +109,8 @@
                             <div class="party">
                                    <h1>Friendsgiving</h1>
                                    <h3>Created by Jill Doe</h3>
-                                   <div class="info_icon">i</div>
-                                   <div class="expanded_information hide">
+                                   <i class="info_icon fa fa-plus"></i>
+                                   <div class="expanded_information" style="display:none;">
                                           <p> This is a super cool party. All of the important part information will go here. Everyone should join this party because this is a super awesome party because we are using the spot app to collectively, collaboratively play our music. </p>
                                           <h4>friends attending</h4>
                                           <ul class="friends_list">
@@ -156,10 +156,14 @@
         <script>
         $(document).ready(function(){
               $('.party').click(function(){
-                     $('.expanded_information').hide();
+                     $(this).siblings(".party").children('.expanded_information').hide();
                      $(this).children('.expanded_information').toggle();
                      $('.party').css('background-color',"white");
                      $(this).css('background-color',"#EBEBEB");
+                     $(this).children(".info_icon").toggleClass('fa-plus');
+                     $(this).children(".info_icon").toggleClass('fa-minus');
+                     $(this).siblings(".party").children(".info_icon").removeClass("fa-minus");
+                     $(this).siblings(".party").children(".info_icon").addClass("fa-plus");
               });
         })
         </script>
