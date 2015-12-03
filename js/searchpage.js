@@ -21,6 +21,7 @@ jQuery(document).ready(function($){
       if (recs_gone_huh == 0) {
         $("#songs").addClass('current');
         $('ul.tabs li').removeClass('current');
+        $('.tab-content').removeClass('current');
         $("li.tab-link").first().addClass('current');
         $("#recs").css('display','none');
         recs_gone_huh = 1;
@@ -257,7 +258,7 @@ jQuery(document).ready(function($){
         }
     });  
 
-    //adding song
+    //adding song to session storage
 
     $(document).on("click", '#songs .icon', function(){
        ID = $(this).siblings(".songID").html();

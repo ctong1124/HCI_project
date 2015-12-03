@@ -25,9 +25,8 @@ jQuery(document).ready(function($){
 		votes = [8, 6, 3, 1, 0, -1, -1]
 		for (var i in add_songs) {
 			ID = add_songs[i];
-			// song = {}
 			session["Playlist"][ID] = {"song": data.music[ID]["song"], "artist": data.music[ID]["artist"], "album": data.music[ID]["album"], "votes": votes[i], "my_vote": 0 };
-			// session["Playlist"].app(song);
+			
 		}
 		
 		
