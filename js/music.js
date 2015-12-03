@@ -279,13 +279,62 @@ var data={
             "album": "Discovery",
             "year": 2001,
             "tracknum": 1,
+        },
+        {
+            "song": "Sun it Rises",
+            "artist": "Fleet Foxes",
+            "album": "Fleet Foxes",
+            "year": 2008,
+            "tracknum": 1,
+        },
+        {
+            "song": "Black Treacle",
+            "artist": "Arctic Monkeys",
+            "album": "Suck It and See",
+            "year": 2011,
+            "tracknum": 2,
+        },
+        {
+            "song": "Mixtape",
+            "artist": "Brand New",
+            "album": "Your Favorite Weapon",
+            "year": 2001,
+            "tracknum": 4,
+        },
+        {
+            "song": "R U Mine?",
+            "artist": "Arctic Monkeys",
+            "album": "AM",
+            "year": 2013,
+            "tracknum": 2,
+        },
+        {
+            "song": "For Sale? (Interlude)",
+            "artist": "Kendrick Lamar",
+            "album": "To Pimp a Butterfly",
+            "year": 2015,
+            "tracknum": 8,
+        },
+        {
+            "song": "Brainstorm",
+            "artist": "Arctic Monkeys",
+            "album": "Favourite Worst Nightmare",
+            "year": 2007,
+            "tracknum": 1,
         }
+
     ],
     "covers": {
         "My Beautiful Dark Twisted Fantasy": "https://upload.wikimedia.org/wikipedia/en/f/f0/My_Beautiful_Dark_Twisted_Fantasy.jpg",
         "Graduation": "https://upload.wikimedia.org/wikipedia/en/7/70/Graduation_(album).jpg",
         "Yeezus": "https://griffinmiller47.files.wordpress.com/2014/08/tumblr_moelxko29e1qjo50co1_1371248265_cover.jpg",
-        "Discovery": "https://upload.wikimedia.org/wikipedia/en/a/ae/Daft_Punk_-_Discovery.jpg"
+        "Discovery": "https://upload.wikimedia.org/wikipedia/en/a/ae/Daft_Punk_-_Discovery.jpg",
+        "Fleet Foxes": "img/album2.jpg",
+        "Suck It and See": "img/album3.jpg",
+        "Your Favorite Weapon": "img/album4.jpg",
+        "AM": "img/album5.jpg",
+        "To Pimp a Butterfly": "img/album6.jpeg",
+        "Favourite Worst Nightmare": "img/album7.jpg",
     },
     "artists": {
         "Kanye West": "http://assets.rollingstone.com/assets/images/artists/kanye-west.jpg",
