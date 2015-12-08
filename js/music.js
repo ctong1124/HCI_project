@@ -338,7 +338,10 @@ var data={
     },
     "artists": {
         "Kanye West": "http://assets.rollingstone.com/assets/images/artists/kanye-west.jpg",
-        "Daft Punk": "http://www.harderbloggerfaster.com/wp-content/uploads/2015/04/11052439_10153091601470673_6852645804799973936_n.jpg"
+        "Daft Punk": "http://www.harderbloggerfaster.com/wp-content/uploads/2015/04/11052439_10153091601470673_6852645804799973936_n.jpg", 
+        "Arctic Monkeys": "https://www.vipseats.com/images/arctic%20monkeys%20tickets.jpg", 
+        "Brand New": "http://blog.tiqiq.com/wp-content/uploads/2015/02/BrandNewBandshot600.jpg",
+        "Kendrick Lamar": "http://cdn4.pitchfork.com/tracks/14476/homepage_large.5ba6f1c6.jpg"
     }
 
 }
