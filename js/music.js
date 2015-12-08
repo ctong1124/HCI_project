@@ -274,13 +274,6 @@ var data={
             "tracknum": 15,
         },
         {
-            "song": "One More Time",
-            "artist": "Daft Punk",
-            "album": "Discovery",
-            "year": 2001,
-            "tracknum": 1,
-        },
-        {
             "song": "Sun it Rises",
             "artist": "Fleet Foxes",
             "album": "Fleet Foxes",
@@ -307,6 +300,13 @@ var data={
             "album": "AM",
             "year": 2013,
             "tracknum": 2,
+        },
+        {
+            "song": "One More Time",
+            "artist": "Daft Punk",
+            "album": "Discovery",
+            "year": 2001,
+            "tracknum": 1,
         },
         {
             "song": "For Sale? (Interlude)",

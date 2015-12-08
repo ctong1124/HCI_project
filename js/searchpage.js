@@ -19,9 +19,10 @@ jQuery(document).ready(function($){
  
       //get rid of recommendations
       if (recs_gone_huh == 0) {
-        $("#songs").addClass('current');
+        
         $('ul.tabs li').removeClass('current');
         $('.tab-content').removeClass('current');
+        $("#songs").addClass('current');
         $("li.tab-link").first().addClass('current');
         $("#recs").css('display','none');
         recs_gone_huh = 1;
@@ -264,7 +265,7 @@ jQuery(document).ready(function($){
        ID = $(this).siblings(".songID").html();
 
         var session = JSON.parse(sessionStorage.getItem('session'));
-        adding = {"song": data.music[ID]["song"], "artist": data.music[ID]["artist"], "album": data.music[ID]["album"], "votes": 0, "my_vote": 0 };
+        adding = {"song": data.music[ID]["song"], "artist": data.music[ID]["artist"], "album": data.music[ID]["album"], "votes": 0, "my_vote": 0, "just_added": 1 };
         session["Playlist"][ID] = adding;
         sessionStorage.setItem('session', JSON.stringify(session));
         window.location.replace("party_page.html");
@@ -274,7 +275,7 @@ jQuery(document).ready(function($){
         ID = $(this).siblings(".songID").html();
 
          var session = JSON.parse(sessionStorage.getItem('session'));
-         adding = {"song": data.music[ID]["song"], "artist": data.music[ID]["artist"], "album": data.music[ID]["album"], "votes": 0, "my_vote": 0 };
+         adding = {"song": data.music[ID]["song"], "artist": data.music[ID]["artist"], "album": data.music[ID]["album"], "votes": 0, "my_vote": 0, "just_added": 1 };
          session["Playlist"][ID] = adding;
          sessionStorage.setItem('session', JSON.stringify(session));
          window.location.replace("party_page.html");
@@ -284,7 +285,7 @@ jQuery(document).ready(function($){
         ID = $(this).siblings(".songID").html();
 
          var session = JSON.parse(sessionStorage.getItem('session'));
-         adding = {"song": data.music[ID]["song"], "artist": data.music[ID]["artist"], "album": data.music[ID]["album"], "votes": 0, "my_vote": 0 };
+         adding = {"song": data.music[ID]["song"], "artist": data.music[ID]["artist"], "album": data.music[ID]["album"], "votes": 0, "my_vote": 0, "just_added": 1 };
          session["Playlist"][ID] = adding;
          sessionStorage.setItem('session', JSON.stringify(session));
          window.location.replace("party_page.html");

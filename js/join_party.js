@@ -21,8 +21,8 @@ jQuery(document).ready(function($){
 		session["Joined"]["party_description"] = partyDescription;
 		session["Joined"]["guests"] = friends;
 
-		add_songs = [40, 41, 42, 43, 44, 45, 17];
-		votes = [8, 6, 3, 1, 0, -1, -1]
+		add_songs = [40, 41, 42, 44, 45];
+		votes = [8, 6, 3, 0, -1]
 		for (var i in add_songs) {
 			ID = add_songs[i];
 			session["Playlist"][ID] = {"song": data.music[ID]["song"], "artist": data.music[ID]["artist"], "album": data.music[ID]["album"], "votes": votes[i], "my_vote": 0 };
