@@ -53,21 +53,27 @@ jQuery(document).ready(function($){
             if (!(data.music[i].song in fill_songs)) {
                 fill_songs[data.music[i].song] = i;
             }
-        }
-        if ((data.music[i].song.toLowerCase().includes(s.toLowerCase()))
-          || (data.music[i].album.toLowerCase().includes(s.toLowerCase()))
-          || (data.music[i].artist.toLowerCase().includes(s.toLowerCase()))) {
             if (!(data.music[i].album in fill_albums)) {
                 fill_albums[data.music[i].album] = i;
             }
-        }
-        if ((data.music[i].song.toLowerCase().includes(s.toLowerCase()))
-          || (data.music[i].album.toLowerCase().includes(s.toLowerCase()))
-          || (data.music[i].artist.toLowerCase().includes(s.toLowerCase()))) {
             if (!(data.music[i].artist in fill_artists)) {
                 fill_artists[data.music[i].artist] = i;
             }
         }
+        // if ((data.music[i].song.toLowerCase().includes(s.toLowerCase()))
+        //   || (data.music[i].album.toLowerCase().includes(s.toLowerCase()))
+        //   || (data.music[i].artist.toLowerCase().includes(s.toLowerCase()))) {
+        //     if (!(data.music[i].album in fill_albums)) {
+        //         fill_albums[data.music[i].album] = i;
+        //     }
+        // }
+        // if ((data.music[i].song.toLowerCase().includes(s.toLowerCase()))
+        //   || (data.music[i].album.toLowerCase().includes(s.toLowerCase()))
+        //   || (data.music[i].artist.toLowerCase().includes(s.toLowerCase()))) {
+        //     if (!(data.music[i].artist in fill_artists)) {
+        //         fill_artists[data.music[i].artist] = i;
+        //     }
+        // }
       }
 
       //songs
